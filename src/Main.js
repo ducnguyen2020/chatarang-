@@ -2,15 +2,22 @@ import React,{ component } from 'react'
 
 import Sidebar from './Sidebar'
 import Chat from './Chat'
+
 class Main extends React.Component {
     render(){
         return(
-            <div className = "Main">
+            <div className = "Main" style = {styles}>
                 <Sidebar />
                 <Chat />
             </div>
         )
     }
+}
+
+const styles = {
+    display : 'flex',
+    alignItems: 'stretch',
+    height: '100vh',
 }
 
 export default Main
