@@ -24,12 +24,13 @@ class Chat extends React.Component{
         }
     }
 
-    addMessage = () => {
+    addMessage = (body) => {
         const messages = [...this.state.messages]
         messages.push({
             id: Date.now(),
-            userName: 'Jieun',
-            body: 'I\'m excited for dinner',
+            userName: this.props.user.userName,
+            body,
+            
         })
         this.setState({messages})
     }

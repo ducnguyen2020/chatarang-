@@ -5,10 +5,17 @@ import './App.css'
 import Main from './Main'
 
 class App extends Component {
+  state= {
+    user: {
+      uid: '123123123',
+      userName: 'Chris',
+    },
+  }
+
   render() {
     return (
       <div className="App">
-        <Main />
+        <Main user = {this.state.user}/>
       </div>
     )
   }
