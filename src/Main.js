@@ -1,4 +1,4 @@
-import React,{ component } from 'react'
+import React from 'react'
 
 import Sidebar from './Sidebar'
 import Chat from './Chat'
