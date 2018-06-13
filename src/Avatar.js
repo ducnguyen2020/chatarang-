@@ -3,7 +3,7 @@ import placeholder from './placeholder.png'
 
 const Avatar = (props) =>{
     return(
-        <img className ="Avatar" style = {styles} src = {placeholder} />
+        <img className ="Avatar" style = {styles} src = {placeholder} alt="avatar" />
     )
 }
 
