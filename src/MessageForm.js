@@ -9,6 +9,7 @@ class MessageForm extends Component {
     handleSubmit = (ev) => {
         ev.preventDefault()
         this.props.addMessage(this.state.body)
+        this.setState({body: ''})
     }
 
     handleChange = (ev)=>{
@@ -22,8 +23,8 @@ class MessageForm extends Component {
             onSubmit={this.handleSubmit}
             style = {styles.MessageForm}
             >
-            <div class="chatIcon" style = {styles.chatIcon}>
-                <i class="fas fa-comment-alt"></i>
+            <div className="chatIcon" style = {styles.chatIcon}>
+                <i className="fas fa-comment-alt"></i>
             </div>
             <input
                 type="text"
@@ -32,6 +33,7 @@ class MessageForm extends Component {
                 value = {this.state.body}
                 onChange = {this.handleChange}
                 style = {styles.input}
+                autoFocus
             />
             <button type="submit" style = {styles.button}>Send</button>
             </form>

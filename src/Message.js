@@ -4,11 +4,11 @@ import Avatar from './Avatar'
 import Metadata from './Metadata';
 const Message = (props) => {
     return(
-        <div class="Message" style = {styles.message}>
+        <div className="Message" style = {styles.message}>
         <Avatar />
-        <div class="details" style = {styles.details}>
+        <div className="details" style = {styles.details}>
             <Metadata user = {props.message.userName}/>
-            <div class="body">
+            <div className="body">
                 {props.message.body}
             </div>
         </div>

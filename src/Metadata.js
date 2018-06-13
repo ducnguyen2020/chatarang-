@@ -2,9 +2,9 @@ import React from 'react'
 
 const Metadata = (props) => {
     return(
-        <div class="Metadata" style = {styles.Metadata}>
-              <div class="user" style = {styles.user}>{props.user}</div>
-              <div class="time" style = {styles.time}>{Date.now()}</div>
+        <div className="Metadata" style = {styles.Metadata}>
+              <div className="user" style = {styles.user}>{props.user}</div>
+              <div className="time" style = {styles.time}>{Date.now()}</div>
         </div>
     )
 }
